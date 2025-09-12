@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <style>
+    /* General body style */
+    body {
+      background: linear-gradient(135deg, #e6f7ff, #f9fff2);
+      font-family: Arial, sans-serif;
+      color: #333;
+      padding: 50px;
+    }
+
+    /* Contact box (card style) */
+    .contact-box {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 40px;
+      border: 3px solid darkgreen;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      transition: all 0.3s ease-in-out;
+      text-align: left;
+    }
+
+    .contact-box:hover {
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+      transform: translateY(-5px);
+    }
+
+    /* Title */
+    h1 {
+      text-align: center;
+      font-size: 50px;
+      font-weight: bold;
+      color: darkgreen;
+      margin-bottom: 30px;
+      animation: glow 2s infinite alternate;
+    }
+
+    /* Title glow animation */
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #90ee90, 0 0 10px #32cd32; }
+      to   { text-shadow: 0 0 15px #00ff00, 0 0 30px #228b22; }
+    }
+
+    /* Contact details */
+    p {
+      font-size: 22px;
+      margin: 15px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Icons before text */
+    .icon {
+      margin-right: 10px;
+      font-size: 24px;
+    }
+
+    /* Links */
+    a {
+      color: darkblue;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s, text-shadow 0.3s;
+    }
+
+    a:hover {
+      color: crimson;
+      text-shadow: 0 0 5px pink;
+    }
+
+    /* Back link */
+    .back-link {
+      display: block;
+      margin-top: 25px;
+      text-align: center;
+      font-size: 20px;
+      color: darkgreen;
+    }
+
+    .back-link:hover {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contact-box">
+    <h1>CONTACT US</h1>
+
+    <p class="email"><span class="icon">📧</span>Email: 
+      <a href="mailto:support@greenbasket.com">support@greenbasket.com</a>
+    </p>
+
+    <p class="phone"><span class="icon">📞</span>Phone: 
+      <a href="tel:+918219935146">+91 82199 35146</a>
+    </p>
+
+    <p class="address"><span class="icon">📍</span>Address: 
+      Mandi, Himachal Pradesh, India
+    </p>
+
+    <a class="back-link" href="index.html">⬅ Back to Home</a>
+  </div>
+
+</body>
+</html>
