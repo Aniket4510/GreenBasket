@@ -41,4 +41,4 @@ Together, we are building a **healthier and greener future**. 🌍
 ## 📸 Screenshots
 *(Add screenshots of your project UI here to showcase features)*  
 
-
+---
