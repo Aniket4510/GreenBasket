@@ -42,3 +42,6 @@ Together, we are building a **healthier and greener future**. 🌍
 *(Add screenshots of your project UI here to showcase features)*  
 
 ---
+## 🎥 Live Demo
+
+Check out the app live here: [https://aniket4510.github.io/GreenBasket/](https://aniket4510.github.io/GreenBasket/) 🚀
