@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>GreenBasket</title>
+  <!-- ✅ Make page responsive on all devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -13,10 +15,11 @@
     }
 
     .container {
+      width: 90%;
       max-width: 900px;
-      margin: 50px auto;
+      margin: 20px auto;
       background: #fff;
-      padding: 40px;
+      padding: 20px;
       border-radius: 15px;
       box-shadow: 0 6px 18px rgba(0,0,0,0.2);
       animation: fadeIn 1.5s ease-in-out;
@@ -25,9 +28,10 @@
     h1 {
       text-align: center;
       color: darkgreen;
-      font-size: 45px;
-      margin-bottom: 20px;
+      font-size: 2.5rem;
+      margin-bottom: 15px;
       animation: glow 2s infinite alternate;
+      line-height: 1.2;
     }
 
     @keyframes glow {
@@ -36,9 +40,9 @@
     }
 
     p {
-      font-size: 20px;
+      font-size: 1rem;
       line-height: 1.6;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
 
     .highlight {
@@ -48,17 +52,18 @@
 
     .mission {
       background: #f0fff0;
-      padding: 20px;
+      padding: 15px;
       border-left: 5px solid green;
       border-radius: 10px;
-      margin-top: 20px;
+      margin-top: 15px;
       font-style: italic;
+      font-size: 0.95rem;
     }
 
     .back-link {
       display: inline-block;
-      margin-top: 30px;
-      font-size: 18px;
+      margin-top: 20px;
+      font-size: 1rem;
       text-decoration: none;
       color: darkblue;
       font-weight: bold;
@@ -73,6 +78,44 @@
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(30px); }
       to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ✅ Responsive Adjustments */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        width: 95%;
+        padding: 15px;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+      .mission {
+        font-size: 0.9rem;
+      }
+      .back-link {
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 360px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+      p, .mission, .back-link {
+        font-size: 0.85rem;
+      }
     }
   </style>
 </head>
@@ -89,10 +132,10 @@
     </p>
 
     <p>
-     <ol> Our journey started with a mission to make <span class="highlight">organic and 
+      Our journey started with a mission to make <span class="highlight">organic and 
       locally grown vegetables</span> accessible to every household in India. 
       At GreenBasket, we value <span class="highlight">freshness, sustainability, 
-      and customer happiness</span>.</ol>
+      and customer happiness</span>.
     </p>
 
     <div class="mission">
